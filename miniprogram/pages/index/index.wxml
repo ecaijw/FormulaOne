@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="title">F1 Driver Standings</view>
+
+  <block wx:for="{{drivers}}" wx:key="index">
+    <view class="row">
+      <text class="pos">{{item.position}}</text>
+      <text class="name">{{item.name}}</text>
+      <text class="nationality">{{item.nationality}}</text>
+      <text class="team">{{item.team}}</text>
+      <text class="points">{{item.points}}</text>
+    </view>
+  </block>
+</view>

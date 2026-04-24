@@ -1,0 +1,33 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Logs
+logs/
+*.log
+
+# Mac
+.DS_Store
+
+# VSCode
+.vscode/
+
+# 微信开发者工具
+.project
+.project.private.config.json
+.project.config.json
+.idea/
+
+# 本地配置（避免泄露 AppID 等）
+local.env.json
+
+# 构建输出
+dist/
+build/
+
+# 云开发（如果后面用）
+cloudfunctions/node_modules/
+
+# 临时文件
+*.tmp
+*.temp
