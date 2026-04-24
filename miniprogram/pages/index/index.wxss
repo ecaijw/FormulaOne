@@ -20,6 +20,12 @@
   font-weight: bold;
 }
 
+.medal {
+  display: inline-block;
+  margin-right: 6rpx;
+  transform: translateY(1rpx);
+}
+
 .name {
   width: 30%;
 }
