@@ -1,5 +1,7 @@
 .container {
-  padding: 20rpx;
+  padding: 0rpx 6rpx;
+  align-items: stretch;
+  width: 100%;
 }
 
 .title {
@@ -10,14 +12,10 @@
 
 .row {
   display: flex;
-  justify-content: space-between;
-  padding: 20rpx;
+  align-items: center;
+  width: 100%;
+  padding: 10rpx 0rpx;
   border-bottom: 1px solid #eee;
-}
-
-.pos {
-  width: 10%;
-  font-weight: bold;
 }
 
 .medal {
@@ -26,20 +24,57 @@
   transform: translateY(1rpx);
 }
 
+.left {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12rpx;
+  padding-left: 0rpx;
+}
+
+.pos {
+  flex: 0 0 90rpx;
+  font-weight: 700;
+}
+
 .name {
-  width: 30%;
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.middle {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6rpx;
+  text-align: center;
 }
 
 .nationality {
-  width: 20%;
-}
-
-.team {
-  width: 20%;
-  color: gray;
+  font-size: 24rpx;
+  color: #666;
+  line-height: 1.2;
 }
 
 .points {
-  width: 20%;
+  flex: 0 0 110rpx;
+  min-width: 110rpx;
   text-align: right;
+  padding-right: 0rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.team {
+  font-size: 24rpx;
+  color: #888;
+  line-height: 1.2;
+  word-break: break-all;
 }

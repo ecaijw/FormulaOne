@@ -3,15 +3,21 @@
 
   <block wx:for="{{drivers}}" wx:key="index">
     <view class="row">
-      <text class="pos">
-        <text wx:if="{{item.position == 1 || item.position == '1'}}" class="medal medal--gold">🥇</text>
-        <text wx:elif="{{item.position == 2 || item.position == '2'}}" class="medal medal--silver">🥈</text>
-        <text wx:elif="{{item.position == 3 || item.position == '3'}}" class="medal medal--bronze">🥉</text>
-        {{item.position}}
-      </text>
-      <text class="name">{{item.name}}</text>
-      <text class="nationality">{{item.nationality}}</text>
-      <text class="team">{{item.team}}</text>
+      <view class="left">
+        <text class="pos">
+          <text wx:if="{{item.position == 1 || item.position == '1'}}" class="medal medal--gold">🥇</text>
+          <text wx:elif="{{item.position == 2 || item.position == '2'}}" class="medal medal--silver">🥈</text>
+          <text wx:elif="{{item.position == 3 || item.position == '3'}}" class="medal medal--bronze">🥉</text>
+          {{item.position}}
+        </text>
+        <text class="name">{{item.name}}</text>
+      </view>
+
+      <view class="middle">
+        <text class="nationality">{{item.nationality}}</text>
+        <text class="team">{{item.team}}</text>
+      </view>
+
       <text class="points">{{item.points}}</text>
     </view>
   </block>
